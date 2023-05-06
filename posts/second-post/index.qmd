@@ -1,0 +1,37 @@
+---
+title: "What I did to get the blog up and running using quarto and github pages? "
+author: "Amr Aboshaisha"
+date: "2023-05-06"
+categories: [news, code, analysis]
+image: ""
+---
+
+Create a github repo “myblog” 
+Cloned it to my local drive 
+>> git clone git@github.com:aaboshaisha/myblog.git
+In the terminal, in the directory containing the cloned repo, I created a new quarto blog project using:
+>> quarto create-project myblog --type website:blog
+
+As per quarto documentation (https://quarto.org/docs/publishing/github-pages.html) , “simplest way to publish using GitHub Pages is to render to the docs directory and then check that directory into your repository”. We change the quarto project configurtion to use “docs” folder as the output directory by modifying the .quarto.yml file using: 
+
+project:
+  type: website
+    output-dir: docs
+
+
+Then the documentation says “add a .nojekyll file to the root of your repository that tells GitHub Pages not to do additional processing of your published site using Jekyll (the GitHub default site generation tool):” 
+
+On a Mac this is:
+>> touch .nojekyll
+
+then render the site
+>> quarto render
+
+add and commit all files to github
+>> git add .
+>> git commit -m “Your message”
+>> git push
+
+“Finally, configure your GitHub repository to publish from the docs directory of your main branch:”
+
+

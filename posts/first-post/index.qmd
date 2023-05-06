@@ -1,0 +1,9 @@
+---
+title: "My First Post"
+author: "Amr Aboshaisha"
+date: "2023-05-06"
+categories: [news]
+---
+
+First experiment with blogging using Quarto and Github Pages
+
