@@ -8,7 +8,7 @@ categories: [code, how-to]
 
 1. Create a github repo “myblog” 
 2. Cloned it to my local drive 
-```git clone git@github.com:aaboshaisha/myblog.git```
+```git clone git@github.com:username/myblog.git```
 
 3. In the terminal, in the directory containing the cloned repo, I created a new quarto blog project using:
 `quarto create-project myblog --type website:blog`
