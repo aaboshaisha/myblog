@@ -1,12 +1,5 @@
 [
   {
-    "objectID": "posts/first-post/index.html",
-    "href": "posts/first-post/index.html",
-    "title": "My First Post",
-    "section": "",
-    "text": "First experiment with blogging using Quarto and Github Pages"
-  },
-  {
     "objectID": "posts/second-post/index.html",
     "href": "posts/second-post/index.html",
     "title": "What I did to get the blog up and running using quarto and github pages?",
@@ -18,7 +11,7 @@
     "href": "index.html",
     "title": "On Brains and Machines",
     "section": "",
-    "text": "My First Post\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nMay 6, 2023\n\n\nAmr Aboshaisha\n\n\n\n\n\n\n  \n\n\n\n\nWhat I did to get the blog up and running using quarto and github pages?\n\n\n\n\n\n\n\ncode\n\n\nhow-to\n\n\n\n\n\n\n\n\n\n\n\nMay 6, 2023\n\n\nAmr Aboshaisha\n\n\n\n\n\n\nNo matching items"
+    "text": "What I did to get the blog up and running using quarto and github pages?\n\n\n\n\n\n\n\ncode\n\n\nhow-to\n\n\n\n\n\n\n\n\n\n\n\nMay 6, 2023\n\n\nAmr Aboshaisha\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",
