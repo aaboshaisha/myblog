@@ -146,23 +146,31 @@ ul.task-list li input[type="checkbox"] {
 
 
 
+<p><em>Anything below in italics is copied from quarto documentation(https://quarto.org/docs/publishing/github-pages.html)</em></p>
 <ol type="1">
 <li><p>Create a github repo “myblog”</p></li>
-<li><p>Cloned it to my local drive &gt;&gt; git clone git@github.com:aaboshaisha/myblog.git</p></li>
-<li><p>In the terminal, in the directory containing the cloned repo, I created a new quarto blog project using: &gt;&gt; quarto create-project myblog –type website:blog</p></li>
-<li><p>As per quarto documentation (https://quarto.org/docs/publishing/github-pages.html) , “simplest way to publish using GitHub Pages is to render to the docs directory and then check that directory into your repository”. We change the quarto project configurtion to use “docs” folder as the output directory by modifying the .quarto.yml file using:</p></li>
+<li><p>Cloned it to my local drive <code>git clone git@github.com:aaboshaisha/myblog.git</code></p></li>
+<li><p>In the terminal, in the directory containing the cloned repo, I created a new quarto blog project using: <code>quarto create-project myblog --type website:blog</code></p></li>
+<li><p><em>“Simplest way to publish using GitHub Pages is to render to the docs directory and then check that directory into your repository”. We change the quarto project configurtion to use “docs” folder as the output directory by modifying the .quarto.yml file using:</em></p></li>
 </ol>
-<p>project: type: website output-dir: docs</p>
+<blockquote class="blockquote">
+<pre><code>project:
+type: website
+output-dir: docs</code></pre>
+</blockquote>
 <ol start="5" type="1">
-<li>Then the documentation says “add a .nojekyll file to the root of your repository that tells GitHub Pages not to do additional processing of your published site using Jekyll (the GitHub default site generation tool):”</li>
+<li><em>“Add a .nojekyll file to the root of your repository that tells GitHub Pages not to do additional processing of your published site using Jekyll (the GitHub default site generation tool):”</em></li>
 </ol>
-<p>On a Mac this is: &gt;&gt; touch .nojekyll</p>
+<p>On a Mac this is: <code>touch .nojekyll</code></p>
 <ol start="6" type="1">
-<li>Then render the site &gt;&gt; quarto render</li>
+<li>Then render the site <code>quarto render</code></li>
 </ol>
-<p>add and commit all files to github &gt;&gt; git add . &gt;&gt; git commit -m “Your message” &gt;&gt; git push</p>
+<p>add and commit all files to github</p>
+<pre><code>&gt;&gt; git add .
+&gt;&gt; git commit -m “Your message”
+&gt;&gt; git push</code></pre>
 <ol start="7" type="1">
-<li>“Finally, configure your GitHub repository to publish from the docs directory of your main branch:”</li>
+<li><em>“Finally, configure your GitHub repository to publish from the docs directory of your main branch:”</em></li>
 </ol>
 <p><img src="gh-pages-docs-dir.png" class="img-fluid"> Img src: https://quarto.org/docs/publishing/github-pages.html</p>
 <p>Now, the website can be accessed at:</p>
@@ -170,6 +178,8 @@ ul.task-list li input[type="checkbox"] {
 <p>username.github.io/reponame/</p>
 </blockquote>
 <p>where username is ur github username and reponame in this example is myblog</p>
+<p>Note-1: <em>Add a new post to your blog by creating a sub-directory within posts, and adding an index.qmd file to the directory. That qmd file is the new blog post and when you render that, the blog home page will automatically update to include the newest post at the top of the listing.</em></p>
+<p>Note-2: Once u add new post, run <code>quarto render</code> in the terminal, then add, commit and push to github to apply the changes to your blog online.</p>
 
 
 

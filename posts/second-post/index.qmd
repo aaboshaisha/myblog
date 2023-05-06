@@ -4,35 +4,38 @@ author: "Amr Aboshaisha"
 date: "2023-05-06"
 categories: [code, how-to]
 ---
+*Anything below in italics is copied from quarto documentation(https://quarto.org/docs/publishing/github-pages.html)*
 
 1. Create a github repo “myblog” 
 2. Cloned it to my local drive 
->> git clone git@github.com:aaboshaisha/myblog.git
+```git clone git@github.com:aaboshaisha/myblog.git```
 
 3. In the terminal, in the directory containing the cloned repo, I created a new quarto blog project using:
->> quarto create-project myblog --type website:blog
+`quarto create-project myblog --type website:blog`
 
-4. As per quarto documentation (https://quarto.org/docs/publishing/github-pages.html) , “simplest way to publish using GitHub Pages is to render to the docs directory and then check that directory into your repository”. We change the quarto project configurtion to use “docs” folder as the output directory by modifying the .quarto.yml file using: 
-
+4. *“Simplest way to publish using GitHub Pages is to render to the docs directory and then check that directory into your repository”. We change the quarto project configurtion to use “docs” folder as the output directory by modifying the .quarto.yml file using:* 
+ 
+> ```
 project:
   type: website
-    output-dir: docs
+  output-dir: docs
+> ```
 
-
-5. Then the documentation says “add a .nojekyll file to the root of your repository that tells GitHub Pages not to do additional processing of your published site using Jekyll (the GitHub default site generation tool):” 
+5. *“Add a .nojekyll file to the root of your repository that tells GitHub Pages not to do additional processing of your published site using Jekyll (the GitHub default site generation tool):”* 
 
 On a Mac this is:
->> touch .nojekyll
+`touch .nojekyll`
 
 6. Then render the site
->> quarto render
+`quarto render`
 
 add and commit all files to github
+```
 >> git add .
 >> git commit -m “Your message”
 >> git push
-
-7. “Finally, configure your GitHub repository to publish from the docs directory of your main branch:”
+```
+7. *“Finally, configure your GitHub repository to publish from the docs directory of your main branch:”*
 
 ![](gh-pages-docs-dir.png)
 Img src: https://quarto.org/docs/publishing/github-pages.html
@@ -42,3 +45,8 @@ Now, the website can be accessed at:
 > username.github.io/reponame/
 
 where username is ur github username and reponame in this example is myblog
+
+
+Note-1: *Add a new post to your blog by creating a sub-directory within posts, and adding an index.qmd file to the directory. That qmd file is the new blog post and when you render that, the blog home page will automatically update to include the newest post at the top of the listing.*
+
+Note-2: Once u add new post, run `quarto render` in the terminal, then add, commit and push to github to apply the changes to your blog online.
