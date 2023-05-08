@@ -147,7 +147,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="the-thought-process" class="level3">
 <h3 class="anchored" data-anchor-id="the-thought-process">The thought process:</h3>
 <p>Suppose we want to build a model that takes as input a random image and outputs a handwritten digit, how can we do it?</p>
-<p>What we have seen before is we can build models to recognize handwritten digits. We can build a model (<span class="math inline">\(f\)</span>) that tries to recognize the probability an image is a handwritten digit.</p>
+<p>We know we can build models to recognize handwritten digits (input is an image of a handwritten digit and output is what the digit is eg 3 or 7). Perhaps then we can build a model (<span class="math inline">\(f\)</span>) that tries to recognize the probability an image is a handwritten digit.</p>
 <p><img src="fig1.png" class="img-fluid" width="300"></p>
 <p>We can use this model to generate images of handwritten digits starting from random images. How?</p>
 <p>Let’s say we start with 28 x 28 pixel image - of some random pixels - as input to the model above eg X3. The model spits out the probability that X3 is a handwritten digit eg <span class="math inline">\(P(X_3) = 0.02\)</span>. What if we ask the model to adjust not its weights, but the pixels of the image <span class="math inline">\(X3\)</span> itself, such that the <span class="math inline">\(P(X3)\)</span> is handwritten digit goes up? If we do this enough times, we eventually end up with an image of a handwritten digit.</p>
@@ -156,20 +156,28 @@ ul.task-list li input[type="checkbox"] {
 <p>How do we train it?</p>
 <p>This function tells us how close a “noisy” image or just “noise” is close to bring a handwritten digit. So, the model need to be able to quantify noise. It needs to know be able to go from img + noise -to-&gt; img.</p>
 <p><img src="fig2.png" class="img-fluid" width="100"></p>
-<p>(imagine each input as pixels of a handwritten digit + noise from normal distribution).</p>
+<p><em>each input is pixels of a handwritten digit + noise from normal distribution</em></p>
 <p>As humans we have a feeling for how much each of the images above is close to being a real handwritten digit. For a computer model (function) to do that, it’s hard to quantify this “feel” to it. The trick around this is if we make try to predict how much noise we added. The amount of noise tells us then how much of a digit it is (the more noise, the less like a digit).</p>
 <p><img src="fig3.png" class="img-fluid" width="300"></p>
 <p>So, we can generate this data.</p>
 <p><img src="fig4.png" class="img-fluid" width="500"></p>
 <p>And train our model to predict noise (<span class="math inline">\(n\)</span>)</p>
-<p>Our model (nn) will have: - Inputs -noisy digits - Outputs - noise - loss function - MSE, between the predicted output(noise) and the actual noise</p>
+<p>Our model (nn) will have:</p>
+<ul>
+<li>Inputs -noisy digits</li>
+<li>Outputs - noise</li>
+<li>loss function - MSE, between the predicted output(noise) and the actual noise</li>
+</ul>
 <p>And now we know that to turn this <img src="fig5.png" class="img-fluid" width="100"> to that <img src="fig6.png" class="img-fluid" width="80"> we need to remove this <img src="fig7.png" class="img-fluid" width="100"></p>
 <p>And this gives us the ability to calculate the gradient of each pixel in top image to make it look like 2nd img. The NN used to do this is a UNet</p>
 </section>
 <section id="the-problem-of-large-image-sizes" class="level3">
 <h3 class="anchored" data-anchor-id="the-problem-of-large-image-sizes">The problem of large image sizes:</h3>
 <p>The computation of the gradient for each image is quite computationally intesive. It’s a lot of compute for the <span class="math inline">\(28 x 28\)</span> pixel images of handwritten digits (think one partial derivative for each pixel of a <span class="math inline">\(28 x 28 pixel image = 784\)</span> done multiple times). And, we don’t want to do this only for handwritten digits in black and white. We want to do this for high quality artistic images like the <span class="math inline">\(512 x 512 x 3\)</span> channel RGB images we have = <span class="math inline">\(786,432\)</span> pixels.</p>
-<p>Solution -&gt; train on compressed images. &gt; Compression allows the small size while keeping the essential information in an image to retrieve it. How can we compress images like this effeiciently? Idea: we pass images through successive convolutional layers with stride 2 (each time doubling the number of channels). At the end we add a few resnet like blocks to squish down the number of channels from 24 to 4.</p>
+<p><strong>Solution</strong>: train on compressed images.</p>
+<p>Compression allows the small size while keeping the essential information in an image to retrieve it.</p>
+<p>How can we compress images like this effeiciently?</p>
+<p>Idea: We pass images through successive convolutional layers with stride 2 (each time doubling the number of channels). At the end we add a few resnet like blocks to squish down the number of channels from 24 to 4.</p>
 <p><img src="fig8.png" class="img-fluid" width="500"></p>
 <p>So starting with <span class="math inline">\(512x512x3\)</span> image, we get size of <span class="math inline">\(64x64x4\)</span>, we have compressed it by a factor of 48 (from <span class="math inline">\(786432 to 16384\)</span> pixels).</p>
 <p>Compression is useful only if we can decompress (get the original image back). We can think of building the reverse architecture to do this (an inverse convolution that does the opposite).</p>
@@ -200,10 +208,14 @@ ul.task-list li input[type="checkbox"] {
 <p>This is what we know as embeddings.</p>
 <p>Our loss function for this model can be defined as adding all the diagonal elements and subtracting from it the off-diagonal elements.</p>
 <p><img src="fig14.png" class="img-fluid" width="300"></p>
-<p>We can feed our text encoder with “a graceful swan”, “some beautiful swan”, “such a lovely swan” and these should all give very similar embeddings because these would all represent very similar images of swans. We’ve successfully created two models that put text and images into the same space, a multimodal(using more than one mode-images and text) model.</p>
-<p>Now, when we go back to our UNet model, we pass it these text features (which we know correspond to image features). This pair of models are called : CLIP,Contrastive Language-Image Pre-training. The loss we are using is called contrastive loss.</p>
+<p>We can feed our text encoder with “a graceful swan”, “some beautiful swan”, “such a lovely swan” and these should all give very similar embeddings because these would all represent very similar images of swans. We’ve successfully created two models that put text and images into the same space, a multimodal(using more than one mode-images and text) model. Now, when we go back to our UNet model, we pass it these text features (which we know correspond to image features).</p>
+<p>This pair of models are called : CLIP,Contrastive Language-Image Pre-training. The loss we are using is called contrastive loss.</p>
 <p>So, in summary, we have:</p>
-<p>A Unet that can denoise latents into unnoisy latents The decoder of VAE that can take latents and create an image The CLIP text encoder which can guide the Unet with captions</p>
+<ul>
+<li>A Unet that can denoise latents into unnoisy latents</li>
+<li>The decoder of VAE that can take latents and create an image</li>
+<li>The CLIP text encoder which can guide the Unet with captions</li>
+</ul>
 <section id="jargon" class="level4">
 <h4 class="anchored" data-anchor-id="jargon">Jargon:</h4>
 <p>The gradients that we calculate in UNet are called the score function.</p>
