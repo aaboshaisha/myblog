@@ -1,4 +1,9 @@
-# Core ideas of Stable Diffusion
+---
+title: "Stable Diffusion Core"
+author: "Amr Aboshaisha"
+date: "2023-05-08"
+categories: [notes]
+---
 
 Below are some notes I took following Jeremy Howard's wonderful lecture on Stable Diffusion [Lesson 9: Deep Learning Foundations to Stable Diffusion, 2022](https://www.youtube.com/watch?v=_7rMfsA24Ls&list=PLfYUBJiXbdtRUvTUYpLdfHHp9a58nWVXP&index=2). The lecture contains much more, but I summarized what I thought to be the core ideas / bare minimum for understanding.
 
