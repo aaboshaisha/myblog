@@ -1,5 +1,5 @@
 ---
-title: "Stable Diffusion Core"
+title: "Stable Diffusion Core Ideas"
 author: "Amr Aboshaisha"
 date: "2023-05-08"
 categories: [notes]
