@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.340">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Home – index</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-fixed fullcontent">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Home</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../about.html" rel="" target="">
+ <span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/" rel="" target=""><i class="bi bi-github" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+</ul>
+            <div class="quarto-navbar-tools">
+</div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+<section id="eeg-primer" class="level1">
+<h1>EEG primer:</h1>
+<p>Below is a primer on EEG that heavily reies on the following paper (<a href="https://pubmed.ncbi.nlm.nih.gov/33270023/">Electroencephalography: basic biophysical and technological aspects important for clinical applications</a>.</p>
+<section id="overview" class="level3">
+<h3 class="anchored" data-anchor-id="overview">Overview</h3>
+<p>The electroencephalogram (EEG) is a non-invasive method to record electrical activity of the brain. It captures the sum of synchronized postsynaptic potentials (PSPs) of neurons such as excitatory (EPSPs) and inhibitory (IPSPs) postsynaptic potentials which occur when neurons communicate with each other.</p>
+<p>The reason EEG signals appear in the form of waves is due to the nature of these neuronal communications and the way EEG captures and represents this activity. Here’s a more detailed breakdown:</p>
+<ol type="1">
+<li><p><strong>Synchronization of Neuronal Activity</strong>: EEG waves reflect the synchronized activity of neurons. When a large number of neurons receive excitatory inputs and become depolarized around the same time (EPSPs), or receive inhibitory inputs and become hyperpolarized (IPSPs), their combined activity produces detectable electrical fields. For an EEG signal to be detected on the scalp, the activity of many neurons must be synchronized in time and space. <strong>This synchronization leads to the rhythmic patterns</strong> observed in EEG recordings.</p></li>
+<li><p><strong>Superposition of PSPs</strong>: EEG waves result from the combined effect of many small excitatory (EPSPs) and inhibitory (IPSPs) postsynaptic potentials occurring in numerous neurons simultaneously, within a closely aligned timeframe. This phenomenon, known as superposition, involves the linear addition of individual neurons’ electrical potentials, producing a larger, detectable signal. For instance, simultaneous potentials of +2 mV and +3 mV from two neurons would collectively result in a +5 mV potential. As this synchronized activity involves thousands to millions of neurons, the EEG is able to capture a clear and strong signal representing this cumulative activity. The synchronization within specific time windows, detectable due to EEG’s high temporal resolution, leads to the emergence of distinct frequency bands (delta, theta, alpha, beta, gamma) that correlate with various brain states and cognitive processes.</p></li>
+<li><p><strong>Types of Waves Correspond to Brain Activity States</strong>: The brain operates in different states (e.g., wakefulness, different stages of sleep), and each state is characterized by different patterns of neuronal activity. For example, alpha waves are prominent when a person is awake but relaxed with closed eyes, while delta waves are seen during deep sleep. The type of wave observed reflects the predominant state of neuronal synchronization in various parts of the brain.</p></li>
+<li><p><strong>Propagation of Electrical Fields</strong>: The electrical fields generated by neuronal activity propagate through the brain and surrounding tissues, including the skull and scalp, where they can be detected by EEG electrodes. The propagation of these fields can smooth out the signals, contributing to the wave-like appearance.</p></li>
+<li><p><strong>Filtering and Amplification</strong>: EEG signals are often filtered and amplified to isolate specific frequency bands (e.g., alpha, beta, delta, theta, gamma) and enhance the signal-to-noise ratio. This processing can further accentuate the wave-like patterns of the EEG signals.</p></li>
+</ol>
+<p>The specific frequency bands in EEG signals (alpha, beta, delta, theta, gamma) are defined based on the range of frequencies observed in the brain’s electrical activity and are associated with different states of brain function and consciousness. The origin of these bands comes from early EEG research, where patterns were observed that correlated with different physiological and psychological states. Here’s a brief overview of each band and its significance:</p>
+<ol type="1">
+<li><p><strong>Delta (δ) Waves (0.5–4 Hz)</strong>: The slowest EEG waves, typically found in deep sleep and in infants. They are also observed during brain injuries, deep meditation, and in certain types of brain disorders. They indicate the lowest level of cognitive processing.</p></li>
+<li><p><strong>Theta (θ) Waves (4–8 Hz)</strong>: Associated with light sleep, relaxation, and drowsiness. They are also present during some meditative states and can be seen in deep emotional experiences. In children, theta waves are more prominent even during wakeful states. They are involved in memory, emotion, and some aspects of learning.</p></li>
+<li><p><strong>Alpha (α) Waves (8–12 Hz)</strong>: Typically observed in wakeful states when a person is at rest with eyes closed, reflecting a state of relaxation and calmness. They diminish when a person opens their eyes or becomes mentally engaged or alert. Alpha waves are considered a marker of the brain’s idle state or resting state network.</p></li>
+<li><p><strong>Beta (β) Waves (12–30 Hz)</strong>: Associated with active, alert consciousness and cognitive engagement. They are present during focused mental activities, problem-solving, judgment, decision making, and when a person is anxious or has their eyes open and is engaging with their environment.</p></li>
+<li><p><strong>Gamma (γ) Waves (30–100 Hz and above)</strong>: Associated with higher mental activity, including perception, problem-solving, fear, and consciousness. They are thought to be involved in the formation of ideas, memory processing, and learning. Gamma waves have been linked to the integration of information across different parts of the brain.</p></li>
+</ol>
+<p>This division allows researchers and clinicians to study and interpret the complex signals of the brain more effectively. For example, changes in the prevalence or power of these bands can indicate various neurological conditions, states of consciousness, or cognitive processes.</p>
+<p><strong>Relation to Anatomy:</strong> The production of EEG wave types (alpha, beta, gamma, delta, theta) is influenced by both the state of brain activity and the anatomical regions of the brain, although <strong>there isn’t a strict one-to-one correspondence between each wave type and specific brain regions</strong>. Rather, different wave types can be more prominent or easily detected in certain areas under specific conditions. Here’s an overview of how each wave type relates to brain anatomy and function:</p>
+<ol type="1">
+<li><p><strong>Delta Waves</strong>: Predominantly observed in the frontal and temporal regions of the brain during deep sleep, delta waves can also appear in other brain areas during certain types of brain injuries or disorders. Their widespread distribution is associated with the deepest stages of sleep and general cortical inhibition.</p></li>
+<li><p><strong>Theta Waves</strong>: These waves are commonly associated with the hippocampal and other limbic areas, crucial for memory formation and navigation. Theta rhythms are also seen in various cortical areas and are involved in tasks that require memory, navigation, and emotion, reflecting their role in cognitive and emotional processing.</p></li>
+<li><p><strong>Alpha Waves</strong>: Alpha activity is most prominently observed in the posterior regions of the brain, particularly the occipital lobe when a person is awake but in a relaxed, eyes-closed state. However, alpha waves can also be modulated by attention and appear in frontal and central regions, indicating a broader role in integrating sensory information and cognitive processes.</p></li>
+<li><p><strong>Beta Waves</strong>: Beta waves are distributed widely across the brain and are associated with active, logical thought, and alertness. They are prominent in the frontal lobes where higher cognitive processes occur and can also be detected in motor areas, reflecting their involvement in conscious movement and attention.</p></li>
+<li><p><strong>Gamma Waves</strong>: Gamma activity is thought to be involved in higher mental activity, including perception, problem-solving, and consciousness, and has been detected in various brain regions. It is often associated with the process of binding different sensory and cognitive experiences into a coherent whole. Gamma waves are observed in many areas of the brain, including the visual cortex, where they are involved in processing visual stimuli, and in frontal brain areas involved in attention and working memory.</p></li>
+</ol>
+<p>Here’s a structured way to remember them, starting from the slowest to the fastest frequencies:</p>
+<section id="delta-waves-0.54-hz" class="level4">
+<h4 class="anchored" data-anchor-id="delta-waves-0.54-hz">Delta Waves (0.5–4 Hz)</h4>
+<ul>
+<li><strong>Mnemonic</strong>: “Deep sleep Delta”</li>
+<li><strong>Psychological Association</strong>: Deep sleep, unconsciousness</li>
+<li><strong>Anatomical Association</strong>: Frontal and temporal regions during sleep, widespread during deep sleep or brain disorders</li>
+<li><strong>Memory Aid</strong>: Think of “Delta” as “Deep” in “Deep sleep”.</li>
+</ul>
+</section>
+<section id="theta-waves-48-hz" class="level4">
+<h4 class="anchored" data-anchor-id="theta-waves-48-hz">Theta Waves (4–8 Hz)</h4>
+<ul>
+<li><strong>Mnemonic</strong>: “Thoughtful Theta”</li>
+<li><strong>Psychological Association</strong>: Light sleep, drowsiness, creative and emotional insights</li>
+<li><strong>Anatomical Association</strong>: Hippocampus and limbic areas, associated with memory and navigation</li>
+<li><strong>Memory Aid</strong>: “Theta” for “Thinking” in a dreamy, creative way.</li>
+</ul>
+</section>
+<section id="alpha-waves-812-hz" class="level4">
+<h4 class="anchored" data-anchor-id="alpha-waves-812-hz">Alpha Waves (8–12 Hz)</h4>
+<ul>
+<li><strong>Mnemonic</strong>: “Awake but Relaxed Alpha”</li>
+<li><strong>Psychological Association</strong>: Relaxed, calm, meditation, eyes closed</li>
+<li><strong>Anatomical Association</strong>: Primarily occipital lobe but also seen in posterior regions; related to wakeful relaxation</li>
+<li><strong>Memory Aid</strong>: “Alpha” as in “Alert but at rest”.</li>
+</ul>
+</section>
+<section id="beta-waves-1230-hz" class="level4">
+<h4 class="anchored" data-anchor-id="beta-waves-1230-hz">Beta Waves (12–30 Hz)</h4>
+<ul>
+<li><strong>Mnemonic</strong>: “Busy Beta”</li>
+<li><strong>Psychological Association</strong>: Active thinking, focus, high alertness, anxiety</li>
+<li><strong>Anatomical Association</strong>: Frontal and motor cortex, widespread during active thought and concentration</li>
+<li><strong>Memory Aid</strong>: “Beta” for “Being actively engaged”.</li>
+</ul>
+</section>
+<section id="gamma-waves-30100-hz-and-above" class="level4">
+<h4 class="anchored" data-anchor-id="gamma-waves-30100-hz-and-above">Gamma Waves (30–100 Hz and above)</h4>
+<ul>
+<li><strong>Mnemonic</strong>: “Great Gamma”</li>
+<li><strong>Psychological Association</strong>: High-level information processing, learning, perception</li>
+<li><strong>Anatomical Association</strong>: Various regions, involved in integrating sensory and cognitive functions</li>
+<li><strong>Memory Aid</strong>: “Gamma” for “Greater” cognitive processes.</li>
+</ul>
+<section id="general-tip" class="level5">
+<h5 class="anchored" data-anchor-id="general-tip">General Tip</h5>
+<p>You can use the sequence of the waves (Delta, Theta, Alpha, Beta, Gamma) to remember their order from slowest to fastest and associate them with going from deep sleep (Delta) to high cognitive processing (Gamma). It progresses much like human activity levels through the day, from deep sleep to peak activity.</p>
+</section>
+</section>
+<section id="provocative-methods-that-increase-the-diagnostic-yield---techniques-used-during-eeg-recordings-to-enhance-the-detection-of-abnormalities-particularly-in-patients-with-epilepsy" class="level4">
+<h4 class="anchored" data-anchor-id="provocative-methods-that-increase-the-diagnostic-yield---techniques-used-during-eeg-recordings-to-enhance-the-detection-of-abnormalities-particularly-in-patients-with-epilepsy">Provocative methods that increase the diagnostic yield - techniques used during EEG recordings to enhance the detection of abnormalities, particularly in patients with epilepsy:</h4>
+<ul>
+<li><p><strong>Provocative Maneuvers</strong>: These are specific actions or conditions applied during EEG recordings to trigger brain activity that might not be visible under normal conditions. The goal is to increase the chances of detecting any abnormalities.</p></li>
+<li><p><strong>Hyperventilation</strong>: Patients are asked to breathe deeply and rapidly for 3-5 minutes. This can be particularly revealing but is not suitable for everyone, especially those with certain medical conditions. Observing the EEG for a couple of minutes after hyperventilation is crucial as changes can occur during this post-hyperventilation phase.</p></li>
+<li><p><strong>Photic Stimulation</strong>: This involves exposing the patient to flashing lights to trigger brain activity. It’s especially useful for identifying photosensitivity, which can be linked to seizures. It should be performed in dim lighting and before hyperventilation to differentiate its effects from those of hyperventilation.</p></li>
+<li><p><strong>Sleep</strong>: Including sleep in the EEG recording can reveal abnormalities that only occur during sleep or are more pronounced during sleep states. In younger children, sleep during the EEG is often naturally occurring, while in others, it may be induced through various means like sleep deprivation or medication.</p></li>
+<li><p><strong>Specialized Provocative Maneuvers</strong>: In certain cases, specific actions related to the patient’s symptoms (e.g., reading for those with reading epilepsy) are included in the EEG recording to provoke the characteristic brain activity associated with their condition.</p></li>
+</ul>
+<p>These methods are integral to standard EEG procedures, enhancing the diagnostic accuracy by revealing epileptic activity and other abnormalities that might not be evident under normal observation conditions.</p>
+</section>
+<section id="types-of-eeg-recordings---essentials-of-conducting-eeg-electroencephalography-recordings-to-ensure-diagnostic-accuracy-particularly-in-identifying-transient-abnormalities" class="level4">
+<h4 class="anchored" data-anchor-id="types-of-eeg-recordings---essentials-of-conducting-eeg-electroencephalography-recordings-to-ensure-diagnostic-accuracy-particularly-in-identifying-transient-abnormalities">Types of EEG recordings - essentials of conducting EEG (electroencephalography) recordings to ensure diagnostic accuracy, particularly in identifying transient abnormalities:</h4>
+<ul>
+<li><p><strong>Standard Routine Recording</strong>: A typical EEG session should last at least 20 minutes of clear, artifact-free recording. This duration is crucial to capture any transient, abnormal EEG patterns that might indicate neurological issues, such as epilepsy. Artifacts are unwanted signals that can interfere with the interpretation of the EEG, coming from muscle movements, eye blinks, or electrical interference, so it’s important to minimize these.</p></li>
+<li><p><strong>Incorporation of Provocative Maneuvers</strong>: Besides the basic recording, the session should include certain provocative maneuvers that can help elicit abnormalities. These could be specific actions or stimuli that provoke a response in the brain, helping to reveal conditions that might not be apparent under normal circumstances.</p></li>
+<li><p><strong>Variability in Recording Conditions</strong>: The EEG should document the brain’s activity both when the patient’s <strong>eyes are open and when they are closed</strong>. This helps in <strong>assessing how the brain responds to different states of sensory input</strong>. For patients who are unable to voluntarily open and close their eyes, the technician might need to assist, ensuring that the recording accurately reflects these conditions.</p></li>
+<li><p><strong>Special Considerations for Children</strong>: When recording EEGs from children, especially those who might not cooperate fully with instructions, creative strategies like the use of a cuddly toy can help in managing the child’s state and ensuring a successful recording session.</p></li>
+</ul>
+</section>
+</section>
+<section id="a-more-detailed-dive" class="level3">
+<h3 class="anchored" data-anchor-id="a-more-detailed-dive">A more detailed dive:</h3>
+<section id="the-electric-source-of-the-eeg-signals---how-eeg-signals-are-generated-and-recorded" class="level4">
+<h4 class="anchored" data-anchor-id="the-electric-source-of-the-eeg-signals---how-eeg-signals-are-generated-and-recorded">The electric source of the EEG signals - how EEG signals are generated and recorded:</h4>
+<p>EEG signals are the result of electrical activities happening in the brain, specifically from the flow of ionic currents across the membranes of dendrites in the pyramidal neurons located in the middle layers (IV - V) of the brain’s cortex.</p>
+<ul>
+<li><p><strong>How Signals Are Generated</strong>: The signals start in the dendrites of neurons which receive signals from other neurons. When these signals are excitatory, they cause the dendrite to become slightly more positively charged by allowing positive ions (like sodium) to flow in. This creates a difference in charge, or a dipole, across the dendrite’s membrane.</p></li>
+<li><p><strong>Extracellular Currents</strong>: The EEG doesn’t measure the activity inside the neuron directly because the cell membrane is an insulator. Instead, it records the movement of <strong>currents outside the neuron</strong> in the extracellular space. This movement creates what are known as local field potentials (LFPs).</p></li>
+<li><p><strong>Volume-Conduction</strong>: The process by which these electrical signals travel through the brain tissue and skull to be recorded by electrodes on the scalp is termed “volume-conduction”. It’s kind of like how the sound from a speaker can fill a room and be heard from anywhere within that room.</p></li>
+<li><p><strong>Action Potentials vs.&nbsp;Postsynaptic Potentials</strong>: While action potentials (brief, large changes in membrane potential that travel along the neuron) are essential for neuron-to-neuron communication, they don’t significantly contribute to the EEG signals. This is because they are too short-lived and occur in too few neurons at any given time to be detected outside of the skull. Instead, the EEG captures the sum of many excitatory (EPSPs) and inhibitory (IPSPs) postsynaptic potentials, which are longer-lasting and occur in many neurons simultaneously.</p></li>
+<li><p><strong>Synchronization</strong>: For an EEG signal to be detectable on the scalp, a large number of neurons (around <strong>10 cm² of cortex</strong>) need to be activated in a synchronized manner. This synchronization results in a measurable electrical field at the scalp.</p></li>
+<li><p><strong>Topography</strong>: The position and orientation of the neurons that are active determine the pattern of electrical potentials seen on the scalp. This pattern, or topography, can be visualized with special maps that show the distribution of electrical activity across the scalp.</p></li>
+</ul>
+<p>In essence, the EEG records the collective hum of electrical activity from the brain’s neurons, much like listening to the buzz of a crowd from a distance. The specific patterns and rhythms in this buzz can tell us a lot about what’s happening in the brain, from basic sensory processing to complex cognitive activities.</p>
+</section>
+<section id="eeg-electrodes-and-recording-arrays---the-technology-behind-capturing-eeg-signals-and-the-setup-of-eeg-recordings" class="level4">
+<h4 class="anchored" data-anchor-id="eeg-electrodes-and-recording-arrays---the-technology-behind-capturing-eeg-signals-and-the-setup-of-eeg-recordings">EEG electrodes and recording arrays - the technology behind capturing EEG signals and the setup of EEG recordings:</h4>
+<ul>
+<li><p><strong>Electrodes</strong>: EEG electrodes are the crucial link between the patient’s brain activity and the EEG recording device. They pick up the electrical signals generated by the brain.</p></li>
+<li><p><strong>Placement</strong>: Electrodes are placed on the scalp at specific locations according to standardized guidelines (like the International 10-20 system). This system uses key anatomical landmarks on the skull to position the electrodes accurately, ensuring consistent recordings across different individuals and studies.</p></li>
+<li><p><strong>Electrode Arrays and Reference Electrodes</strong>: The electrodes are arranged in arrays to cover different parts of the scalp. Reference electrodes are used as a baseline to compare and measure the brain’s electrical activity accurately. Different types of electrode arrangements (montages - see below) can be used depending on the goals of the EEG recording.</p></li>
+<li><p><strong>Impedance and Signal Quality</strong>: Electrode impedance is a measure of resistance to the flow of electrical current. Proper impedance levels are crucial for minimizing noise and ensuring high-quality recordings. Too high or too low impedance can lead to poor signal quality or artifacts.</p></li>
+</ul>
+</section>
+<section id="eeg-amplifiers---how-the-small-electrical-signals-picked-up-by-eeg-electrodes-from-the-brain-are-processed-so-that-they-can-be-analyzed" class="level4">
+<h4 class="anchored" data-anchor-id="eeg-amplifiers---how-the-small-electrical-signals-picked-up-by-eeg-electrodes-from-the-brain-are-processed-so-that-they-can-be-analyzed">EEG amplifiers - how the small electrical signals picked up by EEG electrodes from the brain are processed so that they can be analyzed:</h4>
+<ul>
+<li><p><strong>Differential Measurement</strong>: Each electrode placed on the scalp (the “active” electrode) records the electrical activity from a particular area of the brain. An EEG channel then measures the difference in electrical potential (voltage) between two points: an “active” electrode (one of the scalp electrodes) and a “reference” electrode. This differential measurement helps in identifying the specific electrical activity coming from the brain, as opposed to electrical noise or activity from other sources.</p></li>
+<li><p><strong>Amplification</strong>: The original signals recorded by the scalp electrodes (which are in the order of microvolts, μV) are too small to work with directly. The primary role of an EEG amplifier is to make them larger, or amplify them, so that they can be analyzed and interpreted.</p></li>
+</ul>
+<p>Think of each channel as a distinct line or stream of information coming from a specific spot on the head. When you have multiple channels, you’re collecting data from multiple spots simultaneously, allowing you to see what different parts of the brain are doing at any given time.</p>
+<p>The number of channels recorded in an EEG can vary widely depending on the purpose of the recording, the complexity of the study, and the equipment being used. Common setups include:</p>
+<ul>
+<li><p><strong>Standard Clinical EEG</strong>: Often uses 19 to 21 channels, based on the international 10-20 system for electrode placement. This system provides a good coverage of the entire scalp for routine clinical diagnostics and monitoring.</p></li>
+<li><p><strong>Research and Advanced Clinical Studies</strong>: May use 32, 64, 128, or even more channels for more detailed brain activity mapping. High-density EEGs, with 128 channels or more, are used for research purposes that require high spatial resolution to accurately localize brain activity.</p></li>
+<li><p><strong>Conversion to Digital Signals</strong>: After amplification, the analogue electrical signals are converted into digital signals. This conversion allows the EEG data to be stored, displayed on a computer screen, and analyzed using various computational methods. The conversion process <strong>involves measuring the voltage at very short intervals (time-frames)</strong> and converting these measurements into digital values (numbers) that represent the signal’s strength and quality over time.</p></li>
+<li><p><strong>Sampling Frequency</strong>: How often the voltage is measured per second is called sampling frequency. To accurately capture the EEG signal, the sampling frequency needs to be at least twice as high as the highest frequency in the EEG signal that researchers wish to observe. This is known as the Nyquist rate. For clinical EEG, a minimum standard sampling frequency is 128 samples per second, but higher frequencies can provide better resolution.</p></li>
+</ul>
+</section>
+<section id="filters---how-eeg-recordings-are-refined-to-improve-the-quality-of-the-data-captured-from-the-brains-electrical-activity" class="level4">
+<h4 class="anchored" data-anchor-id="filters---how-eeg-recordings-are-refined-to-improve-the-quality-of-the-data-captured-from-the-brains-electrical-activity">Filters - how EEG recordings are refined to improve the quality of the data captured from the brain’s electrical activity:</h4>
+<ul>
+<li><p><strong>Purpose of Filters</strong>: Since the brain’s electrical signals are very weak, they can easily be contaminated by other electrical signals from muscles, electrical devices, or other sources. Filters are used in EEG recordings to remove or reduce unwanted signals or noise without affecting the important brain signals we want to study.</p></li>
+<li><p><strong>Types of Filters</strong>:</p>
+<ul>
+<li><strong>Low-Pass Filters</strong>: These filters allow signals below a certain frequency to pass through while blocking higher frequency signals. This is useful for removing high-frequency noise, such as muscle activity, that might interfere with the EEG data.</li>
+<li><strong>High-Pass Filters</strong>: These filters do the opposite, allowing signals above a certain frequency to pass and blocking lower frequency signals. This can help remove slow-moving signal artifacts caused by movement or breathing.</li>
+<li><strong>Band-Pass Filters</strong>: A combination of low-pass and high-pass filters, allowing only signals within a certain frequency range to pass through. This is helpful for isolating the frequency range most relevant to the study.</li>
+<li><strong>Notch Filters</strong>: These are designed to remove very specific frequencies from the EEG data, such as the electrical noise from power lines (usually 50 or 60 Hz, depending on the country).</li>
+</ul></li>
+<li><p><strong>Aliasing</strong>: when the sampling frequency (how often the EEG signal is recorded per second) is too low compared to the frequency of the brain signals, this is called aliasing. Aliasing can distort the recorded signal, making it appear as a lower frequency than it actually is. To prevent this, the sampling frequency must be at least twice the highest frequency in the EEG signal (known as the Nyquist rate).</p></li>
+</ul>
+<p>It’s something like trying to take a picture of a fast-moving car with a slow camera. If the camera takes pictures too slowly, the car might look like it’s in a different position than it actually is, or in some cases, it might even appear to be moving backwards.</p>
+<ul>
+<li><p><strong>Anti-Aliasing Filters</strong>: Before the EEG signal is converted from analog to digital (a necessary step for analysis), an anti-aliasing filter is applied to prevent distortion by removing high-frequency components that cannot be correctly sampled.</p></li>
+<li><p><strong>Digital Filters</strong>: After the EEG signal has been digitized, digital filters can be applied to further clean up the signal. Unlike analog filters used before digitization, digital filters can be adjusted after the recording to optimize the analysis of the EEG data.</p></li>
+<li><p><strong>Pitfalls of Over-Filtration</strong>: Overusing filters can lead to the loss of important information in the EEG signal or the introduction of artifacts that could be mistaken for brain activity.</p></li>
+</ul>
+</section>
+<section id="display-visualization-of-the-eeg-signals---how-eeg-data-after-being-collected-and-processed-is-visually-represented-for-analysis" class="level4">
+<h4 class="anchored" data-anchor-id="display-visualization-of-the-eeg-signals---how-eeg-data-after-being-collected-and-processed-is-visually-represented-for-analysis">Display: visualization of the EEG signals - how EEG data, after being collected and processed, is visually represented for analysis:</h4>
+<p>To visualize EEG data and understand what’s happening in the brain, you can follow these simple steps:</p>
+<ol type="1">
+<li><p><strong>Set Up the Display</strong>: First, the EEG data appears on a screen, laid out like an oscilloscope so that time moves from left to right and brain signal strength goes up and down. This view lets you see changes in brain activity as they happen.</p></li>
+<li><p><strong>Learn About the Axes</strong>:</p>
+<ul>
+<li>The up-and-down direction (vertical axis) shows the signal’s strength in microvolts. By convention (and a bit counterintuitive), lower values go up and higher values go down.</li>
+<li>The left-to-right direction (horizontal axis) tracks time, showing how brain activity shifts. Typically, a certain length, like 30 mm, will stand for one second, but you can adjust this to zoom in or out on the data.</li>
+</ul></li>
+<li><p><strong>Tweak How Things Look</strong>:</p>
+<ul>
+<li><strong>Paper Speed</strong>: This changes how much time you see on the screen. Speed it up to look more closely at a short moment, or slow it down to get a bigger picture over a longer time.</li>
+<li><strong>Gain</strong>: This adjusts how big or small the waves look, helping you focus on different parts of the EEG signal.</li>
+</ul></li>
+<li><p><strong>Choose a Montage</strong>: A montage is a way of organizing the display to compare signals from various parts of the brain. Picking the right montage can help highlight the specific brain activities you’re interested in.</p></li>
+<li><p><strong>Zoom and Adjust for Better Analysis</strong>: With digital EEG, you can zoom in to take a closer look at certain events, like seizures, or zoom out to understand the brain’s activity pattern over time. This flexibility is key for a thorough analysis.</p></li>
+</ol>
+</section>
+<section id="montages---how-eeg-signals-can-be-arranged-and-analyzed-to-highlight-different-aspects-of-brain-activity" class="level4">
+<h4 class="anchored" data-anchor-id="montages---how-eeg-signals-can-be-arranged-and-analyzed-to-highlight-different-aspects-of-brain-activity">Montages - how EEG signals can be arranged and analyzed to highlight different aspects of brain activity:</h4>
+<ul>
+<li><p><strong>What Are Montages?</strong>: Montages in EEG are specific arrangements of how the electrical signals from the brain, captured by electrodes on the scalp, are displayed and analyzed. They help in comparing signals from different parts of the brain to detect patterns, abnormalities, or specific activities.</p></li>
+<li><p><strong>Types of Montages Explained</strong>:</p>
+<ul>
+<li><strong>Referential Montages</strong>: Compare the signal from each electrode to a common reference point (an electrode placed at a neutral location). It’s useful for pinpointing where brain activity is happening relative to this common point. However, the choice of reference electrode is crucial because it can influence how the activity is interpreted.</li>
+<li><strong>Bipolar Montages</strong>: Compare the signals from pairs of electrodes to each other. This method is good for seeing how electrical activity flows between two adjacent areas on the scalp, providing a sense of the activity’s direction or pathway across the brain.</li>
+<li><strong>Common Average Montage</strong>: The activity from all electrodes is averaged to create a baseline. The activity at each electrode is then compared to this average. This montage is beneficial for identifying areas of the brain that are more or less active compared to the overall brain activity average.</li>
+</ul></li>
+</ul>
+<p>The selection of montage depends on the specific goals of the EEG analysis. Different montages can reveal different information about brain activity.</p>
+</section>
+<section id="estimation-of-the-source-using-eeg-montages---how-the-positioning-and-direction-of-the-brains-electrical-activity-sources-influence-the-waveforms-observed-in-different-eeg-montage-setups" class="level4">
+<h4 class="anchored" data-anchor-id="estimation-of-the-source-using-eeg-montages---how-the-positioning-and-direction-of-the-brains-electrical-activity-sources-influence-the-waveforms-observed-in-different-eeg-montage-setups">Estimation of the source using EEG montages - how the positioning and direction of the brain’s electrical activity sources influence the waveforms observed in different EEG montage setups:</h4>
+<p>The way groups of neurons (<strong>Source</strong>) are oriented in the brain changes how we see their signals on an EEG:</p>
+<ul>
+<li>If neurons fire together in a direction that’s straight up and down (perpendicular to the brain’s surface), they make a strong, focused negative signal on the EEG. Around this, there’s a weaker, more spread-out positive signal.</li>
+<li>When neurons fire in a direction that’s flat or parallel to the brain’s surface (tangential), they create two separate signals, one negative and one positive, on the EEG. In setups where the EEG compares signals between pairs of electrodes (bipolar montages), these positive and negative signals can show up at the ends of the electrode chains. This makes it tricky to pinpoint where the neurons are firing without looking at how the signals change from negative to positive.</li>
+<li><strong>Bipolar montages</strong> are good for finding the spot with the strongest negative signal because they compare the difference in signal strength between pairs of electrodes. The spot with the strongest activity shows a unique pattern, known as “negative phase-reversal,” which helps identify where the most intense brain activity is.</li>
+<li>Another setup, the <strong>common average montage</strong>, gives a clearer view by highlighting the main spot of activity with a large negative signal and showing smaller positive signals around it. This makes it easier to see both the specific area of intense activity and its wider effects.</li>
+</ul>
+<p>Each way of setting up the EEG (montage) has its pros and cons. Bipolar montages might not catch the broader positive signals well because they focus on the small differences in signal strength between close-by electrodes. However, they excel at locating the most active brain area. It’s important for those analyzing the EEG to understand these details to read the signals correctly.</p>
+<p>NB (can be skipped): “the ends of the electrode chains” : An “electrode chain” is a sequence of electrodes connected or considered in series for the purpose of measurement. In bipolar montages, each pair of electrodes is used to measure the difference in electrical potential between them. So, “the ends of the electrode chains” means the first and last electrodes in a sequence or chain of electrodes that are being used to compare electrical signals across different parts of the scalp.</p>
+<p>In this setup, the brain’s electrical signals are detected as differences in voltage between adjacent electrodes along the chain. Positive and negative signals appearing at the ends of these chains can indicate the directional flow of electrical activity, but pinpointing the exact source of activity requires analyzing the transitions between negative and positive signals across the sequence of electrodes. This arrangement helps in tracing the path of electrical activity across the scalp, but it can make it challenging to precisely locate the origin of the activity without considering the overall pattern of signals in the chain.</p>
+</section>
+<section id="estimation-of-the-source-using-voltage-maps---how-to-use-voltage-maps-for-identifying-the-origins-of-electrical-activity-in-the-brain-as-recorded-by-eeg" class="level4">
+<h4 class="anchored" data-anchor-id="estimation-of-the-source-using-voltage-maps---how-to-use-voltage-maps-for-identifying-the-origins-of-electrical-activity-in-the-brain-as-recorded-by-eeg">Estimation of the source using voltage maps - how to use voltage maps for identifying the origins of electrical activity in the brain, as recorded by EEG:</h4>
+<p>Voltage maps are digital EEG tools that show where brain activity starts by displaying negative and positive electrical potentials across the scalp with color codes—blue for negative and red for positive. The intensity of the color reflects the strength of the signal.</p>
+<p>The source’s orientation, whether radial (outwards from the head’s center) or tangential (parallel to the skull), changes how activity appears on these maps. Radial sources produce a strong negative signal directly above them, encircled by weaker positive signals. Tangential sources generate two distinct poles, one negative and one positive, on the scalp.</p>
+<p>To locate the start of brain activity: - <strong>For radial sources</strong>, search for areas showing large negative signals. - <strong>For tangential sources</strong>, identify the highest signal strength change by connecting the strongest negative and positive signals. The source lies beneath this point.</p>
+<p>Additionally, the activity’s direction is indicated by the side facing the negative signals, pointing towards the brain area responsible for the activity.</p>
+</section>
+<section id="summary" class="level4">
+<h4 class="anchored" data-anchor-id="summary">Summary:</h4>
+<ul>
+<li>EEG stands as the most commonly used method for investigating functional issues in patients experiencing seizures and suspected epilepsy.</li>
+<li>Neurons residing in layers IV-V generate EEG signals through the summation of postsynaptic potentials along their apical dendrites.</li>
+<li>Currents conducted through the brain volume to the scalp surface create a topography of positive and negative potentials, shaped by the position and orientation of the cortical generator.</li>
+<li>Standard (International Federation of Clinical Neurophysiology) EEG electrode array comprises 25 scalp electrodes.</li>
+<li>Digital EEG recordings use a common reference electrode, filtering analogue electrical signals, converting them to digital format, and re-montaging them.</li>
+<li>EEGs display like an oscilloscope, plotting voltage changes vertically against time horizontally, with negative polarity pointed upwards.</li>
+<li>Various montages, such as bipolar and referential or common average and source, help in displaying signals from active electrodes by using another scalp electrode or a calculated value as a reference.</li>
+<li>To estimate the cortical source visually, examining the distribution of negative and positive potentials using topographic (voltage) maps is highly effective.</li>
+<li>Employing provocative maneuvers like hyperventilation, intermittent photic stimulation, and sleep can enhance the diagnostic yield of EEG recordings.</li>
+<li>Several clinical EEG recording types are available, including standard, sleep, short and long-term video-EEG recordings, and invasive (intracranial) recordings.</li>
+</ul>
+
+
+</section>
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

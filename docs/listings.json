@@ -2,6 +2,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/eeg_primer/index.html",
       "/posts/lesson_9/index.html",
       "/posts/second-post/index.html"
     ]
